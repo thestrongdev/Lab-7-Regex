@@ -13,7 +13,7 @@ namespace RegExAteHwGoodson
             //max length of 30
             //can only have alphabets
 
-            Regex pattern = new Regex(@"^[A-Z]{1}[a-z]{0,29}");
+            Regex pattern = new Regex(@"^[A-Z]{1}[a-z]{0,29}$");
 
             return pattern.IsMatch(userName);
         }
@@ -25,7 +25,7 @@ namespace RegExAteHwGoodson
             //then no special characters . domain (combo of alphanumeric chars
             //length of two or three
 
-            Regex pattern = new Regex(@"^\w{5,30}@\w{5,10}.\w{2,3}");
+            Regex pattern = new Regex(@"^\w{5,30}@\w{5,10}.\w{2,3}$");
 
             return pattern.IsMatch(userEmail);
         }
@@ -34,7 +34,7 @@ namespace RegExAteHwGoodson
         {
             //3 digits - 3 digits - 4 digits
 
-            Regex pattern = new Regex(@"^\d{3}-\d{3}-\d{4}");
+            Regex pattern = new Regex(@"^\d{3}-\d{3}-\d{4}$");
 
             return pattern.IsMatch(userNum);
         }
@@ -43,7 +43,7 @@ namespace RegExAteHwGoodson
         {
             //use format of dd/mm/yyyy
 
-            Regex pattern = new Regex(@"^\d{2}\/\d{2}\/\d{4}");
+            Regex pattern = new Regex(@"^(0[1-9]|1[0-2])\/(0[1-9]|1\d|2\d|3[01])\/\d{4}$");
 
             return pattern.IsMatch(someDate);
         }
@@ -53,7 +53,7 @@ namespace RegExAteHwGoodson
             //make sure HTML code has correct open/close elements
             //ignore self contained items like </br>
 
-            Regex pattern = new Regex(@"^<(\w+)>\s<\/\1>");
+            Regex pattern = new Regex(@"^<(\w+)>\s<\/\1>$");
 
             return pattern.IsMatch(htmlCode);
         }
