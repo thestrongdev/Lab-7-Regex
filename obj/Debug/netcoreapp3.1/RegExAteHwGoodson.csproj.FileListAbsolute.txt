@@ -1,0 +1,13 @@
+C:\Users\goods\source\repos\RegExAteHwGoodson\bin\Debug\netcoreapp3.1\RegExAteHwGoodson.exe
+C:\Users\goods\source\repos\RegExAteHwGoodson\bin\Debug\netcoreapp3.1\RegExAteHwGoodson.deps.json
+C:\Users\goods\source\repos\RegExAteHwGoodson\bin\Debug\netcoreapp3.1\RegExAteHwGoodson.runtimeconfig.json
+C:\Users\goods\source\repos\RegExAteHwGoodson\bin\Debug\netcoreapp3.1\RegExAteHwGoodson.runtimeconfig.dev.json
+C:\Users\goods\source\repos\RegExAteHwGoodson\bin\Debug\netcoreapp3.1\RegExAteHwGoodson.dll
+C:\Users\goods\source\repos\RegExAteHwGoodson\bin\Debug\netcoreapp3.1\RegExAteHwGoodson.pdb
+C:\Users\goods\source\repos\RegExAteHwGoodson\obj\Debug\netcoreapp3.1\RegExAteHwGoodson.csprojAssemblyReference.cache
+C:\Users\goods\source\repos\RegExAteHwGoodson\obj\Debug\netcoreapp3.1\RegExAteHwGoodson.AssemblyInfoInputs.cache
+C:\Users\goods\source\repos\RegExAteHwGoodson\obj\Debug\netcoreapp3.1\RegExAteHwGoodson.AssemblyInfo.cs
+C:\Users\goods\source\repos\RegExAteHwGoodson\obj\Debug\netcoreapp3.1\RegExAteHwGoodson.csproj.CoreCompileInputs.cache
+C:\Users\goods\source\repos\RegExAteHwGoodson\obj\Debug\netcoreapp3.1\RegExAteHwGoodson.dll
+C:\Users\goods\source\repos\RegExAteHwGoodson\obj\Debug\netcoreapp3.1\RegExAteHwGoodson.pdb
+C:\Users\goods\source\repos\RegExAteHwGoodson\obj\Debug\netcoreapp3.1\RegExAteHwGoodson.genruntimeconfig.cache

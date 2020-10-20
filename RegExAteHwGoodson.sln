@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30330.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegExAteHwGoodson", "RegExAteHwGoodson.csproj", "{C523FB13-DA5C-4E60-AA03-B43544D796F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C523FB13-DA5C-4E60-AA03-B43544D796F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C523FB13-DA5C-4E60-AA03-B43544D796F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C523FB13-DA5C-4E60-AA03-B43544D796F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C523FB13-DA5C-4E60-AA03-B43544D796F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F9D1250-A1AC-4E4B-86D3-8AFF7A0FE163}
+	EndGlobalSection
+EndGlobal
