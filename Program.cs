@@ -6,6 +6,15 @@ namespace RegExAteHwGoodson
     class Program
     {
 
+        static void Main(string[] args)
+        {
+            GetName();
+            GetEmail();
+            GetNum();
+            GetEmail();
+            GetHtml();
+        }
+
         //use regexr.com or regex 101 to help
         static bool ValidateUserName(string userName)
         {
@@ -58,74 +67,109 @@ namespace RegExAteHwGoodson
             return pattern.IsMatch(htmlCode);
         }
 
-        static void Main(string[] args)
+        static void GetName()
         {
-
-            Console.WriteLine("Please enter a valid name:");
-
-            string userName = Console.ReadLine();
-
-            if (ValidateUserName(userName))
+            do
             {
-                Console.WriteLine("\nName is valid!");
-            } else
-            {
-                Console.WriteLine("\nSorry, name is not valid!");
-            }
+                Console.WriteLine("Please enter a valid name:");
 
-            Console.WriteLine("\nPlease enter a valid email:");
+                string userName = Console.ReadLine();
 
-            string userEmail = Console.ReadLine();
-
-            if (ValidateEmails(userEmail))
-            {
-                Console.WriteLine("\nEmail is valid!");
-            }
-            else
-            {
-                Console.WriteLine("\nSorry, email is not valid!");
-            }
-
-            Console.WriteLine("\nPlease enter a valid phone number in the following format: ###-###-#### ");
-
-            string userNum = Console.ReadLine();
-
-
-            if (ValidatePhoneNum(userNum))
-            {
-                Console.WriteLine("\nPhone number is valid!");
-            }
-            else
-            {
-                Console.WriteLine("\nSorry, phone number is not valid!");
-            }
-
-            Console.WriteLine("\nPlease enter a valid date in the following format: dd/mm/yyyy");
-
-            string someDate = Console.ReadLine();
-
-            if (ValidateDate(someDate))
-            {
-                Console.WriteLine("\nDate is valid!");
-            }
-            else
-            {
-                Console.WriteLine("\nSorry, Date is not valid!");
-            }
-
-            Console.WriteLine("\nPlease enter a valid HTML code");
-
-            string htmlCode = Console.ReadLine();
-
-            if (ValidateHTML(htmlCode))
-            {
-                Console.WriteLine("\nHTML code is valid!");
-            }
-            else
-            {
-                Console.WriteLine("\nSorry, the entered HTML code is not valid!");
-            }
+                if (ValidateUserName(userName))
+                {
+                    Console.WriteLine("\nName is valid!");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("\nSorry, name is not valid!");
+                }
+            } while (true);
 
         }
+
+        static void GetEmail()
+        {
+            do
+            {
+                Console.WriteLine("\nPlease enter a valid email:");
+
+                string userEmail = Console.ReadLine();
+
+                if (ValidateEmails(userEmail))
+                {
+                    Console.WriteLine("\nEmail is valid!");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("\nSorry, email is not valid!"); 
+                }
+            } while (true);
+        }
+
+        static void GetNum()
+        {
+
+            do
+            {
+                Console.WriteLine("\nPlease enter a valid phone number in the following format: ###-###-#### ");
+
+                string userNum = Console.ReadLine();
+
+
+                if (ValidatePhoneNum(userNum))
+                {
+                    Console.WriteLine("\nPhone number is valid!");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("\nSorry, phone number is not valid!");
+                }
+            } while (true);
+        }
+
+        static void GetDate()
+        {
+            do
+            {
+                Console.WriteLine("\nPlease enter a valid date in the following format: dd/mm/yyyy");
+
+                string someDate = Console.ReadLine();
+
+                if (ValidateDate(someDate))
+                {
+                    Console.WriteLine("\nDate is valid!");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("\nSorry, Date is not valid!");
+                }
+            } while (true);
+        }
+
+        static void GetHtml()
+        {
+            do
+            {
+                Console.WriteLine("\nPlease enter a valid HTML code");
+
+                string htmlCode = Console.ReadLine();
+
+                if (ValidateHTML(htmlCode))
+                {
+                    Console.WriteLine("\nHTML code is valid!");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("\nSorry, the entered HTML code is not valid!");
+                }
+            } while (true);
+        }
+
+   
     }
 }
