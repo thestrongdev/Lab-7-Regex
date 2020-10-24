@@ -8,19 +8,30 @@ namespace RegExAteHwGoodson
 
         static void Main(string[] args)
         {
-            GetName();
-            GetEmail();
-            GetNum();
-            GetEmail();
-            GetHtml();
+            try
+            {
+
+                GetName();
+                GetEmail();
+                GetNum();
+                GetDate();
+                GetHtml();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.StackTrace);
+            }
+
+ 
+
+
+
         }
 
         //use regexr.com or regex 101 to help
         static bool ValidateUserName(string userName)
         {
-            //start with capital letters
-            //max length of 30
-            //can only have alphabets
 
             Regex pattern = new Regex(@"^[A-Z]{1}[a-z]{0,29}$");
 
@@ -29,10 +40,6 @@ namespace RegExAteHwGoodson
 
         static bool ValidateEmails(string userEmail)
         {
-            //alphanumeric characters, length between 5 and 30
-            //no special characters then @ alphanumeric chars between 5 and 10
-            //then no special characters . domain (combo of alphanumeric chars
-            //length of two or three
 
             Regex pattern = new Regex(@"^\w{5,30}@\w{5,10}.\w{2,3}$");
 
@@ -41,7 +48,6 @@ namespace RegExAteHwGoodson
 
         static bool ValidatePhoneNum(string userNum)
         {
-            //3 digits - 3 digits - 4 digits
 
             Regex pattern = new Regex(@"^\d{3}-\d{3}-\d{4}$");
 
@@ -50,7 +56,6 @@ namespace RegExAteHwGoodson
 
         static bool ValidateDate(string someDate)
         {
-            //use format of dd/mm/yyyy
 
             Regex pattern = new Regex(@"^(0[1-9]|1[0-2])\/(0[1-9]|1\d|2\d|3[01])\/\d{4}$");
 
@@ -59,9 +64,7 @@ namespace RegExAteHwGoodson
 
         static bool ValidateHTML(string htmlCode)
         {
-            //make sure HTML code has correct open/close elements
-            //ignore self contained items like </br>
-
+          
             Regex pattern = new Regex(@"^<(\w+)>\s<\/\1>$");
 
             return pattern.IsMatch(htmlCode);
